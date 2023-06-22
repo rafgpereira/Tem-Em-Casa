@@ -72,3 +72,4 @@ function requererIngredientes() { //funçao que transforma os ingedientes digita
     console.log(ingredientesJSON);
 
 }
+//eu sou gostoso
