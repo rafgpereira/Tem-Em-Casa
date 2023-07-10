@@ -1,0 +1,9 @@
+dialog{
+    width: 80%;
+}
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.493);
+}
+dialog input{
+    color: green;
+}
