@@ -72,4 +72,15 @@ function requererIngredientes() { //funçao que transforma os ingedientes digita
     console.log(ingredientesJSON);
 
 }
-//eu sou gostoso
+
+setTimeout(function () {
+    const popup = document.querySelector("dialog")
+    popup.showModal()
+    const botaoPopup = document.querySelector("dialog input")
+    botaoPopup.addEventListener("click", function(){
+        popup.close()
+    })
+}, 2000);
+
+
+
