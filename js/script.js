@@ -1,4 +1,4 @@
-const ingredientesPossiveis = ['abóbora', 'açúcar', 'azeitona', 'aveia', 'amendoim', 'amido de milho', 'arroz', 'azeite', 'bacon', 'banana', 'batata', 'batata palha', 'brócolis', 'cachaça', 'canela', 'camarão', 'canjica', 'cenoura', 'chocolate', 'cogumelo', 'couve-flor', 'creme de leite', 'extrato de tomate', 'farinha de rosca', 'farinha de trigo', 'fermento', 'frango', 'fubá', 'gengibre', 'laranja', 'leite', 'leite condensado', 'leite de coco', 'leite em pó', 'limão', 'macarrão', 'maçã', 'mandioca', 'mamão', 'manteiga', 'margarina', 'milho', 'molho de tomate', 'morango', 'mostarda', 'óleo', 'ovo', 'pêssego', 'pimentão', 'presunto', 'queijo', 'requeijão', 'salmão', 'salsicha', 'shoyu', 'tomate', 'uva', 'vinho']
+const ingredientesPossiveis = ['abóbora', 'açúcar', 'azeitona', 'aveia', 'amendoim', 'amido de milho', 'arroz', 'azeite', 'bacon', 'banana', 'batata', 'batata palha', 'brócolis', 'cachaça', 'canela', 'camarão', 'canjica','carne bovina', 'cenoura', 'chocolate', 'cogumelo', 'couve-flor', 'creme de leite', 'extrato de tomate', 'farinha de rosca', 'farinha de trigo', 'fermento', 'frango', 'fubá', 'gengibre', 'laranja', 'leite', 'leite condensado', 'leite de coco', 'leite em pó', 'limão', 'macarrão', 'maçã', 'mandioca', 'mamão', 'manteiga', 'margarina', 'milho', 'molho de tomate', 'morango', 'mostarda', 'óleo', 'ovo', 'pêssego', 'pimentão', 'presunto', 'queijo', 'requeijão', 'salmão', 'salsicha', 'shoyu', 'tomate', 'uva', 'vinho']
 
 const datalist = document.querySelector("#ingredientes")//pega o datalist
 
@@ -73,14 +73,23 @@ function requererIngredientes() { //funçao que transforma os ingedientes digita
 
 }
 
-setTimeout(function () {
-    const popup = document.querySelector("dialog")
-    popup.showModal()
-    const botaoPopup = document.querySelector("dialog input")
-    botaoPopup.addEventListener("click", function(){
-        popup.close()
-    })
-}, 2000);
+
+const acesso = localStorage.getItem("acesso")//pega chave no localstorage
+if (!acesso) {
+    setTimeout(function () {//temporiza o surgimento do popup
+        const popup = document.querySelector("dialog")//pega o elemento dialog no html
+        
+
+        popup.showModal()//mostra o popup
+        const botaoPopup = document.querySelector("dialog input")//pega o botão ok do dialog no html
+        botaoPopup.addEventListener("click", function () {
+            popup.close()//analisa o clique para fechar o popup
+            localStorage.setItem("acesso", true)
+        })
+    }, 2000);//tempo em milisegundos
+}
+
+
 
 
 

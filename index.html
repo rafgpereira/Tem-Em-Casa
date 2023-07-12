@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/iconlogo.png" type="image/x-icon">
+    <title>Tem em Casa</title>
 </head>
 <body>
-    <input type="text" id="campo-entrada" list="ingredientes" autocomplete="on">
-    <datalist id="ingredientes"></datalist>
-    <input type="button" id="botao-adicionar" value="Adicionar">
-    <ul id="lista-ingredientes"></ul>
-    <input type="button" id="botao-requerer" value="Requerer">
+    <main>
+        <div id="title">
+            <h1>Tem em <br>Casa <img src="/img/logo escuro transparente.png" alt=""> </h1></div>
+        <div id="enter">
+            <input type="text" id="campo-entrada" placeholder="Insira os ingredientes" list="ingredientes" autocomplete="on">
+            <input type="button" id="botao-adicionar" value="Adicionar">
+        </div>
+        <datalist id="ingredientes" ></datalist>
+        <ul id="lista-ingredientes"></ul>
+        <input type="button" id="botao-requerer" value="Enviar">
+    </main>
+
     <dialog>
-        <h2>Bem vindo ao Tem em Casa!</h2>
-        <p>Insira os ingredientes que você tem em casa na barra de pesquisa, e clique em enviar para receber receitas!</p>
+        <h2>Bem vindo ao Tem em Casa</h2>
+        <p>Digite os ingredientes que você tem em casa na barra de pesquisa e clique em enviar para receber sugestões de receitas!</p>
         <input type="button" value="OK">
     </dialog>
     <script src="js/script.js"></script>
