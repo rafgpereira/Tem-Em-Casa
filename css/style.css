@@ -47,6 +47,7 @@ body{
 }
 main{
     max-width:700px;
+    min-width: 280px;
     min-height:100vh;
     margin: auto;
     background-color: #dad7cd;
@@ -58,7 +59,7 @@ main{
     justify-content: center;
     font-family: Sergio-Trendy;
     color: #132a13;
-    font-size: 30px;
+    font-size: 2.2rem;
 }
 img{
     height: 80px;
@@ -72,7 +73,7 @@ img{
     width: 250px;
     margin:10px;
     border-radius: 13px;
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
     font-family: Garet;
     font-weight: bolder;
     background-color: #a3b18a;
@@ -87,7 +88,7 @@ img{
 }
 #botao-adicionar{
     border-radius: 13px;
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
     background-color: #588157;
     font-family: Sergio-Trendy;
     font-size: 1rem;
@@ -95,12 +96,16 @@ img{
     border: 2px solid #132a13;
     cursor: pointer;
 }
+#campo-lista{
+    min-height: 150px;
+}
 #lista-ingredientes{
     display:flex;
     flex-wrap: wrap;
     max-width: 700px;
     justify-content: center;
     margin-left: -40px; /*corrige o alinhamento da lista*/
+    
 }
 li{
     list-style-type:none;
@@ -111,6 +116,7 @@ li{
     font-family: Garet;
     font-weight: bolder;
     color: #132a13;
+    font-size: 1rem;
 
 }
 li button{ 
@@ -119,17 +125,54 @@ li button{
     padding-left: 8px;
     font-family: Garet;
     font-weight: bolder;
-    color: #132a13;
+    color: rgb(150, 0, 0);
 }
 #botao-requerer{
     border-radius: 13px;
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
     margin: 10px;
     background-color: #588157;
     font-family: Sergio-Trendy;
     font-size: 1rem;
     color: #132a13;
     border: 2px solid #132a13;
-    cursor: pointer;
+    cursor:pointer;
 }
+@media (max-width: 500px){
+    #title{
+        font-size:1.7rem;
+    }
+    img{
+        height: 70px;
+    }
+    #campo-entrada{
+        width:150px;
+        padding: 7px;
+        border-radius: 8px;
+    }
+    #campo-entrada::placeholder{
+        font-size: 0.7rem;
+    }
+    #botao-adicionar{
+        padding: 7px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+    #botao-requerer{
+        padding: 7px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+    li{
+        font-size: 0.7rem;
+        padding: 4px 7px 4px 7px;
+        border-radius: 7px;
+        margin: 4px;
+    }
+    li button{
+        padding-left: 5px;
+        padding-right: 3px;
+        font-size: 0.7rem;
 
+    }
+}
