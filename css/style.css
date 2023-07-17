@@ -96,6 +96,7 @@ main{
     font-weight: bolder;
     color: rgb(150, 0, 0);
     font-size: 1.1rem;
+    cursor: pointer;
 }
 #botao-requerer{
     border-radius: 13px;
