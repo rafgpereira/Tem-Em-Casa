@@ -5,7 +5,7 @@ const recipes = [
     {
       title: "Lasanha de carne moída",
       link: "https://www.tudogostoso.com.br/receita/876-lasanha-de-carne-moida.html",
-      ingredients: ["carne bovina", "batata", "mandioca", "macarrão", "cenoura", "tomate"],
+      ingredients: ["carne bovina", "presunto","queijo", "macarrão", "tomate","molho de tomate","extrato de tomate"],
       image: "https://static.itdg.com.br/images/640-420/e6aad16dfa0581de2d2f1d35f5aa7833/324587-original.jpg",
       preparationTime: "50 min",
       difficulty: "Médio"
