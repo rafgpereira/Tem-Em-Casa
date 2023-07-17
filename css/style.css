@@ -61,7 +61,7 @@ main{
     color: #132a13;
     font-size: 2.2rem;
 }
-img{
+#logo{
     height: 80px;
     margin-bottom:-12px;
     margin-left: -10px;
@@ -97,7 +97,7 @@ img{
     cursor: pointer;
 }
 #campo-lista{
-    min-height: 150px;
+    min-height: 100px;
 }
 #lista-ingredientes{
     display:flex;
@@ -107,7 +107,7 @@ img{
     margin-left: -40px; /*corrige o alinhamento da lista*/
     
 }
-li{
+#lista-ingredientes li{
     list-style-type:none;
     padding: 7px 10px 7px 10px;
     margin: 5px;
@@ -119,7 +119,7 @@ li{
     font-size: 1rem;
 
 }
-li button{ 
+#lista-ingredientes li button{ 
     border: none;
     background-color: transparent;
     padding-left: 8px;
@@ -130,7 +130,7 @@ li button{
 #botao-requerer{
     border-radius: 13px;
     padding: 15px;
-    margin: 10px;
+    margin: 10px 10px 30px 10px;
     background-color: #588157;
     font-family: Sergio-Trendy;
     font-size: 1rem;
@@ -138,11 +138,48 @@ li button{
     border: 2px solid #132a13;
     cursor:pointer;
 }
+
+#lista-receitas{
+
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    justify-content: center;
+    margin-left: -40px; /*corrige o alinhamento da lista*/
+    
+}
+#lista-receitas li{
+    list-style-type:none;
+    max-width: 40%;
+    margin: 10px;
+    background-color: #a3b18a;
+    border-radius: 13px;
+    font-family: Garet;
+    font-weight: bolder;
+    color: #132a13;
+
+
+}
+#lista-receitas img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit:cover;
+
+}
+#lista-receitas h3{
+    margin: 10px;
+    font-size: 1.3rem;
+}
+#lista-receitas p{
+    font-size: 0.9rem;
+    margin:10px;
+}
 @media (max-width: 500px){
     #title{
         font-size:1.7rem;
     }
-    img{
+    #logo{
         height: 70px;
     }
     #campo-entrada{
@@ -163,16 +200,25 @@ li button{
         font-size: 0.7rem;
         border-radius: 8px;
     }
-    li{
+    #lista-ingredientes li{
         font-size: 0.7rem;
         padding: 4px 7px 4px 7px;
         border-radius: 7px;
         margin: 4px;
     }
-    li button{
+    #lista-ingredientes li button{
         padding-left: 5px;
         padding-right: 3px;
         font-size: 0.7rem;
 
+    }
+    #lista-receitas img{
+        height: 100px;
+    }
+    #lista-receitas h3{
+        font-size:0.9rem;
+    }
+    #lista-receitas p{
+        font-size:0.6rem;
     }
 }

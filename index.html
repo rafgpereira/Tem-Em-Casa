@@ -10,7 +10,7 @@
 <body>
     <main>
         <div id="title">
-            <h1>Tem em <br>Casa <img src="/img/logo escuro transparente.png" alt=""> </h1></div>
+            <h1>Tem em <br>Casa <img id="logo" src="img/logo escuro transparente.png" alt="logo tem em casa"> </h1></div>
         <div id="enter">
             <input type="text" id="campo-entrada" placeholder="Insira os ingredientes" list="ingredientes" autocomplete="on">
             <input type="button" id="botao-adicionar" value="Adicionar">
@@ -19,16 +19,23 @@
         <div id="campo-lista">
             <ul id="lista-ingredientes"></ul>
         </div>
-        <input type="button" id="botao-requerer" value="Enviar">
-
+        <input type="button" id="botao-requerer" value="Buscar receitas">
+        <ul id="lista-receitas"></ul>
     </main>
 
-    <dialog>
+    <dialog id="hello">
         <h2>Bem vindo ao Tem em Casa</h2>
         <p>Digite os ingredientes que você tem em casa na barra de pesquisa e clique em enviar para receber sugestões de receitas!</p>
-        <input type="button" value="OK">
+        <input type="button" value="OK" id="close-hello">
+    </dialog>
+
+    <dialog id="erro">
+        <h2>Ops...</h2>
+        <p>Ainda não temos receitas com essa combinação de ingredientes, mas estamos trabalhando para ampliar nossas receitas!</p>
+        <input type="button" value="OK" id="close-erro">
     </dialog>
     <script src="js/script.js"></script>
+
 
 </body>
 </html>
