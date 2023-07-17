@@ -8,38 +8,7 @@
     src: url(Garet-Book.ttf);
     font-weight: normal;
 }
-dialog{
-    max-width: 500px;
-    background-color: #a3b18a;
-    border-radius: 30px;
-    min-height: 30%;
-    border: 0;
-    text-align: center;
-}
-dialog h2{
-    font-family: Sergio-Trendy;
-    font-size: 2rem;
-    color: #132a13;
-}
-dialog p{
-    font-family: Garet;
-    font-weight: bolder;
-    color: #132a13;
-}
-dialog::backdrop{
-    background-color: #0000005a;
-}
-dialog input{
-    color:#132a13;
-    font-family: Sergio-Trendy;
-    background-color: #588157;
-    border-radius: 10px;
-    border: 0;
-    font-size: 1.3rem;
-    padding: 5px 8px 5px 8px;
-    cursor: pointer;
-    
-}
+
 body{
     background-color:#385638;
     margin: 0;
@@ -130,7 +99,7 @@ main{
 #botao-requerer{
     border-radius: 13px;
     padding: 15px;
-    margin: 10px 10px 30px 10px;
+    margin: 10px 10px 0px 10px;
     background-color: #588157;
     font-family: Sergio-Trendy;
     font-size: 1rem;
@@ -140,7 +109,7 @@ main{
 }
 
 #lista-receitas{
-
+    margin-top: 40px;
     display:flex;
     flex-wrap: wrap;
     max-width: 700px;
@@ -177,31 +146,35 @@ main{
 }
 @media (max-width: 500px){
     #title{
-        font-size:1.7rem;
+        font-size:2.5rem;
     }
     #logo{
-        height: 70px;
+        height: 100px;
     }
     #campo-entrada{
-        width:150px;
-        padding: 7px;
+        width:180px;
+        padding: 10px;
         border-radius: 8px;
+
     }
     #campo-entrada::placeholder{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
     #botao-adicionar{
-        padding: 7px;
-        font-size: 0.7rem;
+        padding: 10px;
+        font-size: 1rem;
         border-radius: 8px;
     }
     #botao-requerer{
-        padding: 7px;
-        font-size: 0.7rem;
+        padding: 15px;
+        font-size: 1.4rem;
         border-radius: 8px;
     }
+    #campo-lista{
+        min-height: 190px;
+    }
     #lista-ingredientes li{
-        font-size: 0.7rem;
+        font-size: 1rem;
         padding: 4px 7px 4px 7px;
         border-radius: 7px;
         margin: 4px;
@@ -209,16 +182,16 @@ main{
     #lista-ingredientes li button{
         padding-left: 5px;
         padding-right: 3px;
-        font-size: 0.7rem;
+        font-size: 1rem;
 
     }
     #lista-receitas img{
         height: 100px;
     }
     #lista-receitas h3{
-        font-size:0.9rem;
+        font-size:1.1rem;
     }
     #lista-receitas p{
-        font-size:0.6rem;
+        font-size:0.8rem;
     }
 }

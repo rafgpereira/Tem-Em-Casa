@@ -1,0 +1,42 @@
+@font-face{
+    font-family: 'Sergio-Trendy';
+    src:url(Sergio\ Trendy.ttf);
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'Garet';
+    src: url(Garet-Book.ttf);
+    font-weight: normal;
+}
+dialog{
+    max-width: 500px;
+    background-color: #a3b18a;
+    border-radius: 30px;
+    min-height: 30%;
+    border: 0;
+    text-align: center;
+}
+dialog h2{
+    font-family: Sergio-Trendy;
+    font-size: 2rem;
+    color: #132a13;
+}
+dialog p{
+    font-family: Garet;
+    font-weight: bolder;
+    color: #132a13;
+}
+dialog::backdrop{
+    background-color: #0000005a;
+}
+dialog input{
+    color:#132a13;
+    font-family: Sergio-Trendy;
+    background-color: #588157;
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.3rem;
+    padding: 5px 8px 5px 8px;
+    cursor: pointer;
+    
+}
