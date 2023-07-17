@@ -15,7 +15,7 @@ body{
 
 }
 main{
-    max-width:700px;
+    max-width:900px;
     min-width: 280px;
     min-height:100vh;
     margin: auto;
@@ -71,7 +71,7 @@ main{
 #lista-ingredientes{
     display:flex;
     flex-wrap: wrap;
-    max-width: 700px;
+    max-width: 900px;
     justify-content: center;
     margin-left: -40px; /*corrige o alinhamento da lista*/
     
@@ -113,7 +113,7 @@ main{
     margin-top: 40px;
     display:flex;
     flex-wrap: wrap;
-    max-width: 700px;
+    max-width: 900px;
     justify-content: center;
     margin-left: -40px; /*corrige o alinhamento da lista*/
     
