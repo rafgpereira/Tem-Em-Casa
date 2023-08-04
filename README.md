@@ -21,6 +21,10 @@
 - Manipulação do DOM
 - Requisição HTTP em servidor
 
+### Deployment
+
+- Deploy no Netlify para hospedagem e disponibilização online
+
 
 ## Descrição do Projeto
 
