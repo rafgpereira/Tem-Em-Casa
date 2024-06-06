@@ -57,4 +57,4 @@ Veja abaixo as capturas de tela da aplicação.
 
 ## Autores
 
-Este projeto foi desenvolvido por [Rafael Pereira](https://github.com/rafgpereira) e [João Pedro Silva](https://github.com/JoaoPedrosilvaSousa).
+Este projeto foi desenvolvido por [Rafael Pereira](https://github.com/rafgpereira) e [João Pedro Silva](https://github.com/JoaoPedrooSS).
